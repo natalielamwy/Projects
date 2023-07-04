@@ -1,0 +1,1 @@
+H alpha flat files go in this directory.
