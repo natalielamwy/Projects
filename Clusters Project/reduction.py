@@ -19,7 +19,7 @@ def remove_bad_pixels(datain, dataout):
     data,header=fits.getdata(datain[0],header=True)
 
     # make bad pixel mask
-    mask=np.ma.make_mask(data,copy=True,shrink=True,dtype=np.bool)
+    mask=np.ma.make_mask(data,copy=True,shrink=True,dtype=np.bool_)
     mask[:,:]=False
     mask[:,255:257]=True
     mask[:,783:785]=True
